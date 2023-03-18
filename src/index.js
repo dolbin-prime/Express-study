@@ -18,6 +18,8 @@ app.listen(port, function () {
     console.log(`Example app listening on port ${port}!`);
 });
 
+app.use('/static', express.static('media'));
+
 app.use(myLogger);
 app.use(requestTime);
 
